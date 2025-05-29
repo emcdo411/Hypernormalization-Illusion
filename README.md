@@ -1,154 +1,175 @@
-Hypernormalization-Illusion
+```markdown
+# 🌌 Hypernormalization-Illusion
 
-An interactive RShiny dashboard exposing the illusion of economic stability in the U.S. (2020–2025) through the lens of hypernormalization, with parallels to the late USSR. Explore unemployment spikes, SNAP surges, tech layoffs, and media disconnects via sleek visualizations inspired by PowerBI and Apple aesthetics.
-Table of Contents
+<div style="text-align: center;">
+  <a href="https://github.com/your-username/Hypernormalization-Illusion/stargazers"><img src="https://img.shields.io/github/stars/your-username/Hypernormalization-Illusion?style=social" alt="GitHub Stars" style="display:inline-block;"></a>
+  <a href="https://github.com/your-username/Hypernormalization-Illusion/network"><img src="https://img.shields.io/github/forks/your-username/Hypernormalization-Illusion?style=social" alt="GitHub Forks" style="display:inline-block;"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" style="display:inline-block;"></a>
+</div>
 
-Introduction
-Hypernormalization Analysis
-Why This Matters
-Features
-Tech Stack
-Installation
-Usage
-Code
-Contributing
-License
-Contact
+**Unmask the illusion of economic stability with an interactive RShiny dashboard!** 📊✨  
+Explore U.S. economic trends (2020–2025) through the lens of *hypernormalization*, revealing eerie parallels with the late USSR’s collapse. Dive into unemployment spikes, SNAP surges, tech layoffs, and media disconnects with sleek, PowerBI-inspired visualizations.
 
-Introduction
-The Illusion of Stability is an RShiny dashboard that unravels the disconnect between economic narratives and realities in the U.S. from 2020 to 2025. Drawing on Adam Curtis’s concept of hypernormalization—where societies uphold failing systems through collective denial—the app visualizes rising unemployment claims (2.6M in 2025), SNAP applicants (5.7M), tech layoffs (e.g., Amazon’s 18,000 in 2022), and media sentiment shifts (from CNN’s 2021 “roaring back” to X’s 2025 skepticism). By juxtaposing these trends with USSR’s collapse (1970–1991), it reveals eerie parallels: propaganda, public cynicism, and systemic cracks.
-Built with RShiny, Plotly, and echarts4r, the app features a modern dark theme with glassmorphic tabs, gradient buttons, and animated transitions, offering an immersive data exploration experience.
-Hypernormalization Analysis
-Hypernormalization, as defined by Adam Curtis, is the state where “everyone knows the system is failing, but no one can imagine an alternative.” This dashboard exposes this phenomenon in the postmodern U.S., mirroring the late USSR:
+⭐ **Star this repo to support the project!**
 
-Economic Disconnects:
+---
 
-Unemployment: Claims rose from 2.1M (2022) to 2.6M (2025), despite GDP growth slowing to 1.2%. Media narratives (e.g., Bloomberg’s 2024 “soft landing”) clash with X posts questioning the “boom” (@EconWatcher, 2025).
-SNAP Surge: Applicants grew from 4.5M (2022) to 5.7M (2025), with the South at 2.4M, signaling food insecurity ignored by recovery stories.
-Tech Layoffs: Major firms (e.g., Meta: 11,000 in 2022) shed jobs due to cost-cutting (2022), tariffs (2023), and automation (2024), masked by innovation rhetoric.
-Education Shifts: College enrollment fell from 17.5M (2020) to 16.1M (2023), while automation displaced 130,000 jobs, yet “education boom” narratives persist.
+## 📋 Table of Contents
 
+- [🌟 Introduction](#introduction)
+- 🔥 [Hypernormalization Analysis](#hypernormalization-analysis)
+- ❓ [Why This Matters](#why-this-matters)
+- 🚀 [Features](#features)
+- 🛠️ [Tech Stack](#tech-stack)
+- 💻 [Installation](#installation)
+- 📈 [Tutorials](#tutorials)
+- 💾 [Code](#code)
+- 🤝 [Contributing](#contributing)
+- 📜 [License](#license)
+- 📬 [Contact](#contact)
 
-USSR Parallels:
+---
 
-1970s USSR: Brezhnev’s propaganda touted stability amid shortages, fostering compliance (1970), dissent (1980), and collapse (1991).
-2020s U.S.: Pandemic spikes (2020), “resilient labor market” claims (WSJ, 2023), and tariff uncertainty (2025) reflect media-reality disconnects and policy contradictions.
-Quotes: Gorbachev’s “we kept pretending” (1991) echoes Musk’s “sleepwalking into chaos” (2025), highlighting denial.
+## 🌟 Introduction
 
+**The Illusion of Stability** is a cutting-edge **RShiny dashboard** that peels back the curtain on U.S. economic narratives from 2020 to 2025. Drawing on Adam Curtis’s *hypernormalization*—where societies cling to failing systems through denial—it visualizes:
 
-Media and Sentiment:
+- **Unemployment**: 📉 2.6M claims in 2025.
+- **SNAP**: 🍽️ 5.7M applicants.
+- **Tech Layoffs: 💼 Amazon’s 18,000 job cuts (2022).
+- **Media Shifts**: 🗞️ From CNN’s 2021 “roaring back” to X’s 2025 skepticism (@EconWatcher).
 
-Bullish headlines (CNN, 2021) gave way to neutral (Bloomberg, 2024) and bearish (X, 2025) tones, with economist warnings (Roubini’s 2023 stagflation, Summers’ 2025 recession probability) ignored.
-UI call volumes (e.g., LA’s 5.7M peak) reveal systemic strain, akin to USSR’s denial of shortages.
+By juxtaposing these with the USSR’s collapse (1970–1991), it reveals chilling parallels: propaganda, cynicism, and cracks in the system. Powered by **RShiny**, **Plotly**, and **echarts4r**, the app boasts a modern **dark theme**, **glassmorphic tabs**, **gradient buttons**, and **animated transitions** for an immersive experience.
 
+> 🚀 Ready to question the narrative? Clone the repo and explore!
 
+---
 
-The app’s timeline and quote carousel underscore these parallels, showing how both societies project stability while ignoring cracks, fostering public distrust and precarity.
-Why This Matters
-Hypernormalization isn’t just a historical curiosity—it’s a warning. In 2025, the U.S. faces:
+## 🔥 Hypernormalization Analysis
 
-Economic Precarity: Rising unemployment and SNAP reliance signal a fragile recovery, yet media downplays risks, eroding trust (e.g., X’s 2025 skepticism).
-Social Impact: Automation and layoffs reshape labor markets, while declining college enrollment (16.1M in 2023) demands new skilling models.
-Policy Risks: Tariff-driven uncertainty and ignored economist warnings (e.g., Yellen’s 2024 caution) could deepen instability, echoing USSR’s collapse.
-Global Lessons: The USSR’s fall shows the cost of denial—public cynicism and systemic failure. The U.S. must confront realities to avoid a similar path.
+*Hypernormalization*, per Adam Curtis, is when “everyone knows the system is failing, but no one can imagine an alternative.” This dashboard exposes this in the U.S., mirroring the late USSR.
 
-This dashboard empowers users to question narratives, analyze data, and spark discussions on sustainable solutions, making it relevant for economists, policymakers, and data enthusiasts.
-Features
+### 📊 Economic Disconnects
 
-Overview: Line chart of unemployment claims, GDP growth, and media sentiment (2020–2025).
-UI Calls: Bar chart of call volumes by city, highlighting COVID and tariff peaks.
-SNAP: Line and pie charts of SNAP applicants by region, with interactive filters.
-Tech Layoffs: Bar chart of layoffs by company, with narrative impacts.
-Education: Dual line chart of college enrollment vs. skilling programs, with automation displacement.
-Economists: Table of warnings from Summers, Roubini, and Yellen.
-Media Sentiment: Quote carousel of media narratives (CNN to X).
-Historical Parallel: Interactive timeline comparing USSR (1970–1991) and U.S. (2020–2025), with a quote carousel.
-Design: PowerBI/Apple-inspired dark theme with glassmorphic tabs, gradient buttons, and animations.
+- **Unemployment**: Claims surged from **2.1M (2022)** to **2.6M (2025)**, despite GDP growth slowing to **1.2%**. Bloomberg’s 2024 “soft landing” narrative clashes with X’s skepticism (@EconWatcher, 2025).
+- **SNAP Surge**: Applicants grew from **4.5M (2022)** to **5.7M (2025)**, with the South at **2.4M**, highlighting food insecurity ignored by recovery tales.
+- **Tech Layoffs**: Firms like Meta (**11,000 cuts, 2022**) shed jobs due to cost-cutting (2022), tariffs (2023), and automation (2024), masked by innovation hype.
+- **Education Shifts**: College enrollment dropped from **17.5M (2020)** to **16.1M (2023)**, with **130,000** jobs automated, yet “education boom” persists.
 
-Tech Stack
-The app leverages a robust R ecosystem for interactive visualization:
+### 🌍 USSR Parallels
 
+- **1970s USSR**: 📰 Brezhnev’s propaganda promised stability amid shortages, leading to compliance (1970), dissent (1980), and collapse (1991).
+- **2020s U.S.**: 🦠 Pandemic spikes (2020), WSJ’s “resilient labor market” (2023), and tariff uncertainty (2025) show media-reality gaps.
+- **Quotes**:
+  - > “The Soviet system was not working... but we kept pretending it was.” – Mikhail Gorbachev (1991)
+  - > “We’re sleepwalking into economic chaos with these tariffs.” – Elon Musk (2025)
 
+### 🗳️ Media and Sentiment
 
-Package
-Description
-Version
-Badge
+- **Media**: Bullish CNN (2021) shifted to neutral Bloomberg (2024) and bearish X (2025). Economist warnings (Roubini: stagflation, 2023; Summers: 60% recession, 2025) are ignored.
+- **Systemic Strain**: UI call volumes (LA’s **5.7M** peak) echo USSR’s shortage denial.
 
+The app’s **interactive timeline** and **quote carousel** highlight these parallels, exposing how denial fosters distrust and precarity.
 
+---
 
-shiny
-Framework for building interactive web apps in R
-1.7.5
+## ❓ Why This Matters
 
+Hypernormalization isn’t just history—it’s a warning for 2025:
 
+- 🔍 **Economic Precarity**: Rising unemployment (**2.6M**) and SNAP (**5.7M**) signal fragility, yet media downplays risks, eroding public trust (X, 2025).
+- 🔍 **Social Impact**: Automation and layoffs reshape jobs, while college enrollment (**16.1M**, 2023) demands new skilling models.
+- 🔍 **Policy Risks**: Tariff uncertainty and ignored warnings (Yellen, 2024) risk instability, echoing USSR’s fall.
+- 🔍 **Global Lessons**: The USSR’s collapse warns of cynicism and failure from denialization. The U.S. must face reality.
 
-ggplot2
-Data visualization with elegant grammar of graphics
-3.4.2
+This dashboard empowers **economists**, **policymakers**, and **data enthusiasts** to question narratives, analyze data, and spark sustainable solutions.
 
+---
 
+## 🚀 Features
 
-plotly
-Interactive, web-based plots with R integration
-4.10.2
+- 📈 **Overview**: Line chart of unemployment, GDP, and media sentiment (2020–2025).
+- 📊 **UI Calls**: Bar chart of call volumes by city, spotlighting COVID/tariff peaks.
+- 🍎 **SNAP**: Line and pie charts of applicants by region, with interactive filters.
+- 💼 **Tech Layoffs**: Bar chart of layoffs by company, with narrative impacts.
+- 🎓 **Education**: Dual line chart of enrollment vs. skilling, with automation displacement.
+- 🗣 **Economists**: Table of warnings from Summers, Yellen, and Roubini.
+- 📰 **Media Sentiment**: Quote carousel of narratives (CNN to X).
+- 🌐 **Historical Parallel**: Timeline comparing USSR (1970–1991) and U.S. (2020–2025).
+- 🎨 **Design**: PowerBI/Apple-inspired **dark theme** glassmorphic theme with glassmorphic tabs, gradient buttons, and animations.
 
+---
 
+## 🛠️ Tech Stack
 
-echarts4r
-JavaScript-based interactive charts for R
-0.4.4
+The app harnesses a sleek **R ecosystem** for visualization:
 
+| Package | 📚 Description | 🔢 Version | 🎨 Badge |
+|---------|----------------|------------|----------|
+| [shiny](https://shiny.rstudio.com/) | Interactive web apps in R | 1.7.5 | [![Shiny](https://img.shields.io/badge/Shiny-1.7.5-blue?style=flat-square&logo=r)](https://cran.r-project.org/package=shiny) |
+| [ggplot2](https://ggplot2.tidyverse.org/) | Elegant data visualization | 3.4.2 | [![ggplot2](https://img.shields.io/badge/ggplot2-3.4.2-green?style=flat-square&logo=r)](https://cran.r-project.org/package=ggplot2) |
+| [plotly](https://plotly.com/r/) | Web-based interactive plots | 4.10.2 | [![Plotly](https://img.shields.io/badge/Plotly-4.10.2-orange?style=flat-square&logo=plotly)](https://cran.r-project.org/package=plotly) |
+| [echarts4r](https://echarts4r.john-coene.com/) | JavaScript charts for R | 0.4.4 | [![echarts4r](https://img.shields.io/badge/echarts4r-0.4.4-purple?style=flat-square&logo=r)](https://cran.r-project.org/package=echarts4r) |
+| [shinythemes](https://rstudio.github.io/shinythemes/) | Pre-built Shiny themes | 1.2.0 | [![shinythemes](https://img.shields.io/badge/shinythemes-1.2.0-red?style=flat-square&logo=r)](https://cran.r-project.org/package=shinythemes) |
 
+---
 
-shinythemes
-Pre-built themes for Shiny apps
-1.2.0
+## 💻 Installation
 
+<details>
+<summary>🔧 Setup Guide</summary>
 
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/Hypernormalization-Illusion.git
+   cd Hypernormalization-Illusion
+   ```
 
-Installation
+2. **Install R and RStudio**:
+   - 📥 Download [R](https://www.r-project.org/) (4.2.0+).
+   - 🖥️ Install [RStudio](https://www.rstudio.com/products/rstudio/download/).
 
-Clone the Repository:git clone https://github.com/your-username/Hypernormalization-Illusion.git
-cd Hypernormalization-Illusion
+3. **Install Dependencies**:
+   ```R
+   install.packages(c("shiny", "ggplot2", "plotly", "echarts4r", "shinythemes"))
+   ```
 
+4. **Run the App**:
+   - 📂 Open `app.R` in RStudio.
+   - ▶️ Click “Run App” or run:
+     ```R
+     shiny::runApp()
+     ```
 
-Install R and RStudio:
-Download R (version 4.2.0 or higher).
-Install RStudio.
+</details>
 
+---
 
-Install Dependencies:install.packages(c("shiny", "ggplot2", "plotly", "echarts4r", "shinythemes"))
+## 📈 Tutorials
 
+<details>
+<summary>🖱️ How to Use</summary>
 
-Run the App:
-Open app.R in RStudio.
-Click “Run App” or execute:shiny::runApp()
+- **Navigate Tabs**: 🧭 Use the top bar to explore “Overview,” “SNAP,” “Tech Layoffs,” etc.
+- **Interact with Visuals**:
+  - 🖱️ Hover over charts for tooltips (e.g., SNAP details).
+  - 🔽 Use dropdowns (e.g., SNAP region) and sliders (e.g., quote carousel).
+- **Download Outputs**:
+  - 📥 Click “Download Plot as PNG” for charts or “Download Table as CSV” for warnings.
+- **Explore Hypernormalization**:
+  - 🌍 Compare USSR/U.S. timelines in “Historical Parallel.”
+  - 💭 Reflect on quotes from Gorbachev, Yellen, and Musk.
 
+</details>
 
+---
 
+## 💾 Code
 
+<details>
+<summary>📜 Full RShiny Code</summary>
 
-Usage
-
-Navigate Tabs: Use the top navigation bar to explore “Overview,” “SNAP,” “Tech Layoffs,” etc.
-Interact with Visuals:
-Hover over charts for tooltips (e.g., SNAP applicant details).
-Use dropdowns (e.g., SNAP region filter) and sliders (e.g., quote carousel).
-
-
-Download Outputs:
-Click “Download Plot as PNG” for charts or “Download Table as CSV” for economist warnings.
-
-
-Explore Hypernormalization:
-Compare USSR and U.S. timelines in the “Historical Parallel” tab.
-Reflect on quotes from Gorbachev, Yellen, and Musk.
-
-
-
-Code
-Below is the complete RShiny code for the dashboard:
+```R
 library(shiny)
 library(ggplot2)
 library(plotly)
@@ -305,13 +326,13 @@ ui <- fluidPage(
       border-radius: 12px;
       padding: 20px;
       margin: 20px 0;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: fadeIn 0.5s ease-out;
     }
 
     .tab-panel:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(230, 57, 70, 0.3);
     }
 
@@ -321,8 +342,8 @@ ui <- fluidPage(
       border-left: 4px solid #e63946;
       padding: 15px 20px;
       margin: 20px 0;
-      border-radius: 4px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
     }
 
@@ -340,15 +361,15 @@ ui <- fluidPage(
     .form-control, .selectize-input {
       background: #2a2a2a;
       color: #e0e0e0;
-      border: 1px solid #444444;
-      border-radius: 5px;
+      border: 1px solid #444;
+      border-radius: 6px;
       padding: 10px;
-      transition: border-color 0.2s ease;
+      transition: border-color 0.3s ease;
     }
 
-    .form-control:focus, .selectize-input:focus {
+    .form-control:focus, .selectize-input.focus {
       border-color: #e63946;
-      box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.2);
+      box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.3);
     }
 
     /* Buttons */
@@ -356,7 +377,7 @@ ui <- fluidPage(
       background: linear-gradient(90deg, #e63946, #ffa726);
       color: #ffffff;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       padding: 10px 20px;
       font-weight: 500;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -377,7 +398,7 @@ ui <- fluidPage(
     }
 
     /* Table */
-    .table {
+    table {
       width: 100%;
       background: #2a2a2a;
       border-radius: 8px;
@@ -388,19 +409,14 @@ ui <- fluidPage(
     th, td {
       padding: 12px;
       text-align: left;
-      border-bottom: 1px solid #444444;
+      border-bottom: 1px solid #444;
       color: #e0e0e0;
     }
 
     th {
       background: #e63946;
       color: #ffffff;
-      font-weight: bold;
-    }
-
-    table {
-      background: #222222;
-      color: #e0e0e0;
+      font-weight: 600;
     }
 
     /* Animations */
@@ -555,7 +571,7 @@ server <- function(input, output, session) {
       labs(title = "Unemployment, GDP, and Media Sentiment (2020–2025)", y = "", x = "Year") +
       theme(plot.background = element_rect(fill = "transparent", color = NA),
             panel.background = element_rect(fill = "transparent"),
-            text = element_text(color = "#e0e0e0))
+            text = element_text(color = "#e0e0e0"))
     ggplotly(gg)
   })
 
@@ -565,7 +581,7 @@ server <- function(input, output, session) {
       p <- plotly::plot_ly(data = unemployment_data, x = ~year, y = ~unemployment_claims_thousands, type = "scatter", mode = "lines", name = "Unemployment Claims") %>%
         plotly::add_lines(y = ~gdp_growth_percent * 100, name = "GDP Growth x100", line = list(dash = "dash")) %>%
         plotly::add_lines(y = ~media_sentiment * 1000, name = "Media Sentiment x1k", line = list(dash = "dot")) %>%
-        plotly::layout(title = "Unemployment, GDP, and Media Sentiment (2020–2025)", yaxis = list(title = ""), xaxis = list(title = Year")) 
+        plotly::layout(title = "Unemployment, GDP, and Media Sentiment (2020–2025)", yaxis = list(title = ""), xaxis = list(title = "Year"))
       plotly::export(p, file = file)
     }
   )
@@ -574,13 +590,13 @@ server <- function(input, output, session) {
   output$ui_calls_plot <- renderPlotly({
     validate(need(exists("ui_calls"), "UI calls data not found"))
     gg <- ggplot(ui_calls, aes(x = city)) +
-      geom_bar(aes(y = average_calls_thousands, fill = "Average Calls"), stat = "identity", position = position_dodge(width = 0.4)) +
+      geom_bar(aes(y = average_calls_thousands, fill = "Average Calls"), stat =姑 identity", position = position_dodge(width = 0.4)) +
       geom_bar(aes(y = peak_calls_thousands / 100, fill = "Peak Calls (x100)"), stat = "identity", position = position_dodge(width = -0.4)) +
       scale_fill_manual(values = c("Average Calls" = "#00bcd4", "Peak Calls (x100)" = "#e63946")) +
       theme_minimal(base_family = "SF Pro Display") +
-      labs(title = "UI Call Volume by City (2020–2025)", y = "Calls (Thousands)", x = "City" ) +
+      labs(title = "UI Call Volume by City (2020–2025)", y = "Calls (Thousands)", x = "City") +
       theme(plot.background = element_rect(fill = "transparent"),
-            text = element_text(color = "#e0e0e0))
+            text = element_text(color = "#e0e0e0"))
     ggplotly(gg)
   })
 
@@ -595,7 +611,7 @@ server <- function(input, output, session) {
   )
 
   # SNAP: Line Chart
-  output$snap_line_plot <- renderPlotly({
+  output$line_plot <- renderPlotly({
     validate(need(exists("snap_data"), "SNAP data not found"))
     snap_filtered <- if (input$snap_region == "All") {
       snap_data
@@ -608,8 +624,8 @@ server <- function(input, output, session) {
         geom_point(color = "#ffa726", size = 3)
     } else {
       ggplot(snap_filtered, aes(x = year)) +
-        geom_line(aes(y = get(paste0(tolower(input$snap_region), "_millions")), color = input$snap_region), size = 1.2) +
-        geom_point(aes(y = get(paste0(tolower(input$snap_region), "_millions")), color = input$snap_region), size = 3) +
+        geom_line(aes(y = get(paste0(tolower(input$snap_region), "_millions")), color = input$snap_region)), size = 1.2) +
+        geom_point(aes(y = get(paste0(tolower(input$snap_region), "_millions")), color = input$snap_region)), size = 3) +
         scale_color_manual(values = c("Northeast" = "#e63946", "South" = "#ffa726", "Midwest" = "#00bcd4", "West" = "#cccccc"))
     }
     gg <- gg +
@@ -631,17 +647,18 @@ server <- function(input, output, session) {
       p <- if (input$snap_region == "All") {
         plotly::plot_ly(data = snap_filtered, x = ~year, y = ~total_millions, type = "scatter", mode = "lines+markers", marker = list(color = "#ffa726"), line = list(color = "#ffa726"))
       } else {
-        plotly::plot_ly(data = snap_filtered, x = ~year, y = ~get(paste0(tolower(input$snap_region), "_millions")), type = "scatter", mode = "lines+markers", 
-                        marker = list(color = c("Northeast" = "#e63946", "South" = "#ffa726", "Midwest" = "#00bcd4", "West" = "#cccccc")[input$snap_region]), 
-                        line = list(color = c("Northeast" = "#e63946", "South" = "#ffa726", "Midwest" = "#00bcd4", "West" = "#cccccc")[input$snap_region]))
+        plotly::plot_ly(data = snap_filtered, x = ~year, y = ~get(paste0(tolower(input$snap_region), "_millions"))), type = "scatter", mode = "lines+markers", 
+                        marker = list(color = c("Northeast" = "#e63946", "South" = "#ffa726", "Midwest" = "#00bcd4", "West" = "#cccccc")[input$snap_region])), 
+                        line = list(color = c("Northeast" = "#e63946", "South" = "#ffa726", "Midwest" = "#00bcd4", "West" = "#cccccc")[input$snap_region])))
       }
       p <- p %>% plotly::layout(title = paste("SNAP New Applicants (", input$snap_region, ")"), xaxis = list(title = "Year"), yaxis = list(title = "Millions"))
+      )
       plotly::export(p, file = file)
     }
   )
 
   # SNAP: Pie Chart (Using Plotly directly)
-  output$snap_pie_plot <- renderPlotly({
+  output$pie_plot <- renderPlotly({
     validate(need(exists("snap_data"), "SNAP data not found"))
     snap_2025 <- snap_data[snap_data$year == 2025, ]
     pie_data <- data.frame(
@@ -656,7 +673,7 @@ server <- function(input, output, session) {
       marker = list(colors = c("#e63946", "#ffa726", "#00bcd4", "#cccccc")),
       textinfo = "label+percent",
       hoverinfo = "text",
-      text = ~paste("Region: ", region, "<br>", "Applicants: ", value, " million"),
+      text = ~paste("Region: ", region, "<br>", "Applicants: ", value", ", million"),
       showlegend = FALSE
     ) %>%
     layout(
@@ -666,15 +683,15 @@ server <- function(input, output, session) {
       font = list(color = "#e0e0e0"),
       margin = list(t = 100)
     )
-  })
+  )
 
   output$download_snap_pie <- downloadHandler(
     filename = "snap_pie_plot.png",
     content = function(file) {
-      snap_2025 <- snap_data[snap_data$year == 2025, ]
+      snap_2025 <- snap_data[snap_data$year == 2025$, ]
       pie_data <- data.frame(
         region = c("Northeast", "South", "Midwest", "West"),
-        value = c(snap_2025$northeast_millions, snap_2025$south_millions, snap_2025$midwest_millions, snap_2025$west_millions)
+        value = c(snap_2025$northeast_millions, snap_2025_$south_millions, snap_2025$midwest_millions, snap_2025$west_millions)
       )
       p <- plotly::plot_ly(
         data = pie_data,
@@ -686,8 +703,8 @@ server <- function(input, output, session) {
         showlegend = FALSE
       ) %>%
         plotly::layout(
-          title = list(text = "SNAP Applicants by Region (2025)", font = list(color = "#e0e0e0")),
-          paper_bgcolor = "transparent",
+          title = list(text = "SNAP Applicants by Region (2025)", font = list(color = "#e0e0")),
+          paper_backgroundcolor = "transparent",
           plot_bgcolor = "transparent",
           font = list(color = "#e0e0e0")
         )
@@ -727,8 +744,7 @@ server <- function(input, output, session) {
           title = paste("Tech Layoffs by Year (", input$layoff_company, ")"),
           xaxis = list(title = "Year"),
           yaxis = list(title = "Layoffs"),
-          barmode = "group"
-        )
+          barmode = "group")
       plotly::export(p, file = file)
     }
   )
@@ -834,23 +850,41 @@ server <- function(input, output, session) {
 
 # --- Run App ---
 shinyApp(ui, server)
+```
 
-Contributing
-Contributions are welcome! To contribute:
+</details>
 
-Fork the repository.
-Create a branch: git checkout -b feature/your-feature.
-Commit changes: git commit -m 'Add your feature'.
-Push to the branch: git push origin feature/your-feature.
-Open a pull request.
+---
 
-Please ensure code follows R style guidelines and includes tests where applicable.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-Contact
+## 🤝 Contributing
+
+Contributions are welcome! 🌟 To contribute:
+
+1. 🍴 Fork the repository.
+2. 🌿 Create a branch: `git checkout -b feature/your-feature`.
+3. 💾 Commit changes: `git commit -m 'Add your feature'`.
+4. 🚀 Push to the branch: `git push origin feature/your-feature`.
+5. 📬 Open a pull request.
+
+Please follow R style guidelines and include tests where applicable.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details. 📝
+
+---
+
+## 📬 Contact
+
 For questions or feedback, reach out via:
 
-GitHub: your-username
-Email: your-email@example.com
-LinkedIn: Your LinkedIn Profile
+- 🐙 **GitHub**: [your-username](https://github.com/your-username)
+- 📧 **Email**: your-email@example.com
+- 💼 **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
+
+---
+
+✨ **Thanks for exploring Hypernormalization-Illusion!** ✨
 
